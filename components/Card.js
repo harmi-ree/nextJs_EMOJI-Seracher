@@ -1,6 +1,6 @@
 import sanitizeHtml from "sanitize-html";
 import styles from "@/styles/Card.module.css";
-/*d*/
+
 export default function Card(props) {
   const htmlCode = props.item.htmlCode.join("");
   const name = props.item.name.replaceAll(/[≊|,].*/g, "");
